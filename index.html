@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content"width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+body{
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
+
+main{
+display:flex;
+flex-grow:1;
+flex-shrink:1;
+flex-basis:auto;
+background-color:lightgray;
+}
+
+header,footer{
+text-align:center;
+}
+
+aside{
+width:50em;
+padding:10px;
+}
+
+nav{
+padding:10px;
+}
+article{
+font-size:5vh;
+padding:10px;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+nav a{
+text-decoration:none;
+color:black;
+}
+img{
+float:right;
+max-width:100%;
+height:auto;
+}
+@media(max-width:640px){
+main{
+flex-direction:column;
+}
+aside,nav{
+width:auto;
+
+}
+nav{
+order:-1;
+
+}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Un super titre</h1>
+</header>
+<main>
+<aside>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</aside>
+<article>
+<img src="https://am22.akamaized.net/tms/cnt/uploads/2013/04/Pika.jpg"></img>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</article>
+<nav>
+<ul>
+<li><a href="#">Lien</a></li>
+<li><a href="#">Lien</a></li>
+<li><a href="#">Lien</a></li>
+<li><a href="#">Lien</a></li>
+</ul>
+
+</nav>
+</main>
+<footer>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</footer>
+</body>
+</html>
